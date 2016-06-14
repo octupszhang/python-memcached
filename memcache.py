@@ -116,8 +116,8 @@ class _ConnectionDeadError(Exception):
     pass
 
 
-_DEAD_RETRY = 30  # number of seconds before retrying a dead server.
-_SOCKET_TIMEOUT = 3  # number of seconds before sockets timeout.
+_DEAD_RETRY = 120  # number of seconds before retrying a dead server.
+_SOCKET_TIMEOUT = 1  # number of seconds before sockets timeout.
 
 
 class Client(threading.local):
